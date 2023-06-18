@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:c="">
+<body>
+<h2 align="center">CARS</h2>
+<table align="center" border="2">
+
+    <tr>
+        <th>Brand</th>
+        <th>Model</th>
+        <th>YearOfManufacture</th>
+    </tr>
+    <tbody>
+    <tr th:each="car : ${cars}">
+        <td><p th:text="${car.getBrand()}">car</p></td>
+        <td><p th:text="${car.getModel()}">car</p></td>
+        <td><p th:text="${car.getYearOfmanufacture()}">car</p></td>
+    </tr>
+    </tbody>
+
+</table>
+</body>
+</html>
